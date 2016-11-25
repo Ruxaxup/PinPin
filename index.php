@@ -1,4 +1,5 @@
 <?php
+	header("Content-Type: text/html; charset=iso-8859-1");
 	$fi = new FilesystemIterator('json/', FilesystemIterator::SKIP_DOTS);
 	$lessonCount = iterator_count($fi)
 ?>
@@ -42,7 +43,7 @@
 				<form action="json.php" method="post">
 					<input type="hidden" name="lesson" <?php echo 'value="leccion' . ($i + 1) . '.json"'; ?>>
 					<input type="hidden" name="exercise" value=0>
-					<button class="w3-btn w3-teal" type="submit" formmethod="post" formaction="json.php" ><?php echo 'Lección '. ($i  + 1); ?></button>
+					<button class="w3-btn w3-teal" type="submit" formmethod="post" formaction="json.php" ><?php echo 'Lecci&oacute;n '. ($i  + 1); ?></button>
 				</form>
       		</div> 
 
